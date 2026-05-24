@@ -1,47 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WanderNest Travel Guide</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/201/201623.png">
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+  <!-- LEFT POPUP -->
+
+  <div class="popup-offer">
+
+    <h3>🔥 WanderNest Flash Sale</h3>
+
+    <p>
+      Book your dream vacation now.<br>
+      3 Days Free Food Included 🍽️
+    </p>
+
+    <button>Book Now</button>
+
+  </div>
+
   <!-- HEADER -->
+
   <header>
+
     <div class="logo">WanderNest</div>
 
     <div class="search-bar">
-      <input type="text" placeholder="Search destinations, hotels, restaurants...">
+      <input type="text" placeholder="Search destinations">
       <button>Search</button>
     </div>
 
     <nav>
+
       <ul>
-        <li><a href="#">Hotels</a></li>
-        <li><a href="#">Flights</a></li>
-        <li><a href="#">Restaurants</a></li>
-        <li><a href="#">Activities</a></li>
-        <li><a href="#">Destinations</a></li>
+
+        <li>
+          <a href="https://www.booking.com/city/in/chennai.en-gb.html" target="_blank">
+            Hotels
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.goindigo.in/" target="_blank">
+            Flights
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.zomato.com/chennai/restaurants" target="_blank">
+            Restaurants
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.thrillophilia.com/" target="_blank">
+            Activities
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.tripadvisor.in/Tourism-g304556-Chennai_Madras_Chennai_District_Tamil_Nadu-Vacations.html"
+            target="_blank">
+            Destinations
+          </a>
+        </li>
+
       </ul>
+
     </nav>
+
   </header>
 
   <!-- HERO SECTION -->
+
   <section class="hero">
+
+    <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1200&q=80"
+      alt="Kerala" class="hero-img">
+
+    <div class="hero-overlay"></div>
+
     <div class="hero-content">
+
       <h1>Explore Beautiful Destinations</h1>
-      <p>Discover hotels, restaurants, and unforgettable experiences around the world.</p>
+
+      <p>
+        Discover hotels, restaurants and unforgettable travel experiences around the world.
+      </p>
 
       <div class="filters">
+
         <input type="text" placeholder="Enter City">
-        
+
         <select>
           <option>Price Range</option>
-          <option>Budget</option>
-          <option>Mid Range</option>
-          <option>Luxury</option>
+          <option>₹10K - ₹20K</option>
+          <option>₹20K - ₹30K</option>
+          <option>₹30K - ₹50K</option>
         </select>
 
         <select>
@@ -52,122 +115,197 @@
         </select>
 
         <button>Find Places</button>
+
       </div>
+
     </div>
+
   </section>
 
-  <!-- FEATURED DESTINATIONS -->
+  <!-- DESTINATIONS -->
+
   <section class="section">
-    <h2>Featured Destinations</h2>
+
+    <h2>Popular Tourist Places</h2>
 
     <div class="card-container">
 
+      <!-- CARD 1 -->
+
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Maldives">
+
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
+          alt="Maldives">
+
         <div class="card-content">
+
           <h3>Maldives</h3>
+
           <span>⭐ 4.9</span>
-          <p>Crystal clear beaches, luxury resorts, and amazing island experiences.</p>
+
+          <h4>₹50,000</h4>
+
+          <p>Luxury beach vacation with crystal clear water.</p>
+
         </div>
+
       </div>
 
+      <!-- CARD 2 -->
+
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98" alt="Paris">
+
+        <img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98?auto=format&fit=crop&w=1200&q=80">
+
         <div class="card-content">
+
           <h3>Paris</h3>
+
           <span>⭐ 4.8</span>
-          <p>Experience the city of love with iconic attractions and fine dining.</p>
+
+          <h4>₹45,000</h4>
+
+          <p>Romantic city with iconic places and luxury cafes.</p>
+
         </div>
+
       </div>
 
+      <!-- CARD 3 -->
+
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=80" alt="Dubai">
+
+        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=80">
+
         <div class="card-content">
+
           <h3>Dubai</h3>
+
           <span>⭐ 4.7</span>
-          <p>Luxury shopping, modern skyscrapers, and desert adventures.</p>
+
+          <h4>₹40,000</h4>
+
+          <p>Modern skyscrapers and desert safari adventures.</p>
+
         </div>
+
       </div>
 
-    </div>
-  </section>
-
-  <!-- POPULAR HOTELS -->
-  <section class="section">
-    <h2>Popular Hotels</h2>
-
-    <div class="card-container">
+      <!-- CARD 4 -->
 
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945" alt="Hotel">
+
+        <img src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1200&q=80"
+          alt="Singapore">
+
         <div class="card-content">
-          <h3>Ocean Breeze Resort</h3>
+
+          <h3>Singapore</h3>
+
           <span>⭐ 4.8</span>
-          <p>Luxury beachfront hotel with world-class facilities and sea view rooms.</p>
+
+          <h4>₹35,000</h4>
+
+          <p>Beautiful nightlife and clean modern attractions.</p>
+
         </div>
+
       </div>
 
+      <!-- CARD 5 -->
+
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c" alt="Hotel">
+
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80">
+
         <div class="card-content">
-          <h3>Mountain Peak Hotel</h3>
+
+          <h3>Bali</h3>
+
           <span>⭐ 4.6</span>
-          <p>Beautiful mountain resort perfect for relaxing vacations and nature lovers.</p>
+
+          <h4>₹25,000</h4>
+
+          <p>Relaxing beaches and tropical island adventures.</p>
+
         </div>
+
       </div>
 
+      <!-- CARD 6 -->
+
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1455587734955-081b22074882" alt="Hotel">
+
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80">
+
         <div class="card-content">
-          <h3>Royal Palace Suites</h3>
+
+          <h3>Switzerland</h3>
+
+          <span>⭐ 5.0</span>
+
+          <h4>₹48,000</h4>
+
+          <p>Snow mountains and peaceful natural beauty.</p>
+
+        </div>
+
+      </div>
+
+      <!-- CARD 7 -->
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1200&q=80">
+
+        <div class="card-content">
+
+          <h3>Thailand</h3>
+
+          <span>⭐ 4.7</span>
+
+          <h4>₹20,000</h4>
+
+          <p>Affordable beaches and exciting nightlife spots.</p>
+
+        </div>
+
+      </div>
+
+      <!-- CARD 8 -->
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80">
+
+        <div class="card-content">
+
+          <h3>Japan</h3>
+
           <span>⭐ 4.9</span>
-          <p>Premium suites with elegant interiors and luxury hospitality services.</p>
+
+          <h4>₹50,000</h4>
+
+          <p>Technology, culture and beautiful city views.</p>
+
         </div>
+
       </div>
 
     </div>
-  </section>
 
-  <!-- RESTAURANTS -->
-  <section class="section">
-    <h2>Top Rated Restaurants</h2>
-
-    <div class="card-container">
-
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4" alt="Restaurant">
-        <div class="card-content">
-          <h3>Skyline Dine</h3>
-          <span>⭐ 4.7</span>
-          <p>Fine dining restaurant with rooftop seating and international cuisine.</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9" alt="Restaurant">
-        <div class="card-content">
-          <h3>Spice Garden</h3>
-          <span>⭐ 4.6</span>
-          <p>Authentic flavors with modern ambience and delicious local dishes.</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17" alt="Restaurant">
-        <div class="card-content">
-          <h3>Urban Taste</h3>
-          <span>⭐ 4.8</span>
-          <p>Modern cafe and restaurant famous for desserts and gourmet meals.</p>
-        </div>
-      </div>
-
-    </div>
   </section>
 
   <!-- FOOTER -->
+
   <footer>
-    <p>© 2026 WanderNest Travel Guide | Explore The World</p>
+
+    <p>
+      © 2026 WanderNest Travel Guide | Explore The World
+    </p>
+
   </footer>
 
 </body>
+
 </html>
