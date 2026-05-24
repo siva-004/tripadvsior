@@ -31,7 +31,7 @@ body{
 
   z-index:3000;
 
-  animation:popupslide 8s infinite;
+  animation:popupslide 3s;
 }
 
 .popup-offer h3{
