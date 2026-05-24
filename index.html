@@ -1,26 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>TravelNova</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WanderNest Travel Guide</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- HEADER -->
-
   <header>
+    <div class="logo">WanderNest</div>
 
-    <div class="top-header">
-
-      <div class="logo">TravelNova</div>
-
-      <div class="search-box">
-        <input type="text" placeholder="Search destinations, hotels, restaurants...">
-        <button>Search</button>
-      </div>
-
+    <div class="search-bar">
+      <input type="text" placeholder="Search destinations, hotels, restaurants...">
+      <button>Search</button>
     </div>
 
     <nav>
@@ -28,296 +22,151 @@
         <li><a href="#">Hotels</a></li>
         <li><a href="#">Flights</a></li>
         <li><a href="#">Restaurants</a></li>
-        <li><a href="#">Things To Do</a></li>
-        <li><a href="#">Vacation Rentals</a></li>
-        <li><a href="#">Cruises</a></li>
-        <li><a href="#">Travel Stories</a></li>
+        <li><a href="#">Activities</a></li>
+        <li><a href="#">Destinations</a></li>
       </ul>
     </nav>
-
   </header>
 
-  <!-- HERO -->
-
+  <!-- HERO SECTION -->
   <section class="hero">
-
     <div class="hero-content">
-      <h1>Discover Your Next Adventure</h1>
+      <h1>Explore Beautiful Destinations</h1>
+      <p>Discover hotels, restaurants, and unforgettable experiences around the world.</p>
 
-      <p>
-        Explore breathtaking destinations, luxury hotels,
-        delicious restaurants and unforgettable experiences.
-      </p>
+      <div class="filters">
+        <input type="text" placeholder="Enter City">
+        
+        <select>
+          <option>Price Range</option>
+          <option>Budget</option>
+          <option>Mid Range</option>
+          <option>Luxury</option>
+        </select>
 
-      <div class="hero-buttons">
-        <button class="primary-btn">Explore</button>
-        <button class="secondary-btn">Plan Trip</button>
+        <select>
+          <option>Rating</option>
+          <option>5 Star</option>
+          <option>4 Star</option>
+          <option>3 Star</option>
+        </select>
+
+        <button>Find Places</button>
       </div>
-
     </div>
-
   </section>
 
-  <!-- FILTER -->
-
-  <section class="filter-section">
-
-    <div class="filters">
-
-      <input type="text" placeholder="Enter Destination">
-
-      <select>
-        <option>Select Budget</option>
-        <option>Budget</option>
-        <option>Mid Range</option>
-        <option>Luxury</option>
-      </select>
-
-      <select>
-        <option>Hotel Rating</option>
-        <option>5 Star</option>
-        <option>4 Star</option>
-        <option>3 Star</option>
-      </select>
-
-      <button>Find Places</button>
-
-    </div>
-
-  </section>
-
-  <!-- DESTINATIONS -->
-
+  <!-- FEATURED DESTINATIONS -->
   <section class="section">
+    <h2>Featured Destinations</h2>
 
-    <div class="section-title">
-      <h2>Trending Destinations</h2>
-      <a href="#">View All</a>
-    </div>
-
-    <div class="card-grid">
+    <div class="card-container">
 
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80">
-
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Maldives">
         <div class="card-content">
           <h3>Maldives</h3>
-          <span class="rating">⭐ 4.9</span>
-
-          <p>
-            Luxury beaches, crystal clear water,
-            diving adventures and tropical resorts.
-          </p>
-
-          <span class="price">Starting ₹24,999</span>
+          <span>⭐ 4.9</span>
+          <p>Crystal clear beaches, luxury resorts, and amazing island experiences.</p>
         </div>
       </div>
 
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=1200&q=80">
-
+        <img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98" alt="Paris">
         <div class="card-content">
           <h3>Paris</h3>
-          <span class="rating">⭐ 4.8</span>
-
-          <p>
-            Romantic city with Eiffel Tower,
-            cafes, museums and luxury shopping.
-          </p>
-
-          <span class="price">Starting ₹44,999</span>
+          <span>⭐ 4.8</span>
+          <p>Experience the city of love with iconic attractions and fine dining.</p>
         </div>
       </div>
 
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=80">
-
+        <img src="https://images.unsplash.com/photo-1526481280695-3c4693f8f4f0" alt="Dubai">
         <div class="card-content">
           <h3>Dubai</h3>
-          <span class="rating">⭐ 4.7</span>
-
-          <p>
-            Modern skyline, luxury malls,
-            beach resorts and desert safari.
-          </p>
-
-          <span class="price">Starting ₹34,999</span>
+          <span>⭐ 4.7</span>
+          <p>Luxury shopping, modern skyscrapers, and desert adventures.</p>
         </div>
       </div>
 
     </div>
-
   </section>
 
-  <!-- HOTELS -->
-
+  <!-- POPULAR HOTELS -->
   <section class="section">
+    <h2>Popular Hotels</h2>
 
-    <div class="section-title">
-      <h2>Popular Hotels</h2>
-      <a href="#">Explore Hotels</a>
-    </div>
-
-    <div class="card-grid">
+    <div class="card-container">
 
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80">
-
+        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945" alt="Hotel">
         <div class="card-content">
           <h3>Ocean Breeze Resort</h3>
-          <span class="rating">⭐ 4.8</span>
-
-          <p>
-            Beachfront luxury resort with infinity pool,
-            spa and premium sea-view suites.
-          </p>
-
-          <span class="price">₹12,500 / night</span>
+          <span>⭐ 4.8</span>
+          <p>Luxury beachfront hotel with world-class facilities and sea view rooms.</p>
         </div>
       </div>
 
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&w=1200&q=80">
-
+        <img src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c" alt="Hotel">
         <div class="card-content">
           <h3>Mountain Peak Hotel</h3>
-          <span class="rating">⭐ 4.7</span>
-
-          <p>
-            Beautiful mountain-side hotel with
-            scenic balcony views and nature ambience.
-          </p>
-
-          <span class="price">₹9,800 / night</span>
+          <span>⭐ 4.6</span>
+          <p>Beautiful mountain resort perfect for relaxing vacations and nature lovers.</p>
         </div>
       </div>
 
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1455587734955-081b22074882?auto=format&fit=crop&w=1200&q=80">
-
+        <img src="https://images.unsplash.com/photo-1455587734955-081b22074882" alt="Hotel">
         <div class="card-content">
           <h3>Royal Palace Suites</h3>
-          <span class="rating">⭐ 4.9</span>
-
-          <p>
-            Elegant luxury suites with premium interiors
-            and world-class service.
-          </p>
-
-          <span class="price">₹15,000 / night</span>
+          <span>⭐ 4.9</span>
+          <p>Premium suites with elegant interiors and luxury hospitality services.</p>
         </div>
       </div>
 
     </div>
-
   </section>
 
   <!-- RESTAURANTS -->
-
   <section class="section">
+    <h2>Top Rated Restaurants</h2>
 
-    <div class="section-title">
-      <h2>Top Restaurants</h2>
-      <a href="#">View Restaurants</a>
-    </div>
-
-    <div class="card-grid">
+    <div class="card-container">
 
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80">
-
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4" alt="Restaurant">
         <div class="card-content">
           <h3>Skyline Dine</h3>
-          <span class="rating">⭐ 4.8</span>
-
-          <p>
-            Rooftop fine dining restaurant
-            with amazing skyline views.
-          </p>
-
-          <span class="price">Average ₹2,500</span>
+          <span>⭐ 4.7</span>
+          <p>Fine dining restaurant with rooftop seating and international cuisine.</p>
         </div>
       </div>
 
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1200&q=80">
-
+        <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9" alt="Restaurant">
         <div class="card-content">
           <h3>Spice Garden</h3>
-          <span class="rating">⭐ 4.7</span>
-
-          <p>
-            Authentic local cuisine with
-            premium ambience and family dining.
-          </p>
-
-          <span class="price">Average ₹1,800</span>
+          <span>⭐ 4.6</span>
+          <p>Authentic flavors with modern ambience and delicious local dishes.</p>
         </div>
       </div>
 
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=1200&q=80">
-
+        <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17" alt="Restaurant">
         <div class="card-content">
           <h3>Urban Taste</h3>
-          <span class="rating">⭐ 4.9</span>
-
-          <p>
-            Modern cafe and restaurant
-            famous for desserts and gourmet meals.
-          </p>
-
-          <span class="price">Average ₹2,200</span>
+          <span>⭐ 4.8</span>
+          <p>Modern cafe and restaurant famous for desserts and gourmet meals.</p>
         </div>
       </div>
 
     </div>
-
   </section>
 
   <!-- FOOTER -->
-
   <footer>
-
-    <div class="footer-container">
-
-      <div class="footer-box">
-        <h3>TravelNova</h3>
-
-        <p>
-          Explore the world's best destinations,
-          hotels, restaurants and experiences.
-        </p>
-      </div>
-
-      <div class="footer-box">
-        <h3>Quick Links</h3>
-
-        <ul>
-          <li>Hotels</li>
-          <li>Flights</li>
-          <li>Restaurants</li>
-          <li>Travel Guides</li>
-        </ul>
-      </div>
-
-      <div class="footer-box">
-        <h3>Support</h3>
-
-        <ul>
-          <li>Help Center</li>
-          <li>Privacy Policy</li>
-          <li>Terms & Conditions</li>
-          <li>Contact Us</li>
-        </ul>
-      </div>
-
-    </div>
-
-    <div class="copyright">
-      © 2026 TravelNova. All Rights Reserved.
-    </div>
-
+    <p>© 2026 WanderNest Travel Guide | Explore The World</p>
   </footer>
 
 </body>
